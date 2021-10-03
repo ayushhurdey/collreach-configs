@@ -1,0 +1,52 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /posts
+
+# token valid for 10 years. Created on 09/05/2021 (dd/mm/yyyy)
+auth:
+  token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxODIyY3MxMDQ5IiwiZXhwIjoxOTM1OTM2MTU4LCJpYXQiOjE2MjA1NzYxNTh9.SPqXqwLGHXWl485jr_sojbseRkiYiMMKTL-9gjCVYzxO6mok4mnWaS_Sy9KPmT-dzHhjj_lj32wLyB8UKT5AGw
+
+spring:
+  application:
+    name: posts
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  datasource:
+    # url: jdbc:mysql://mysqldb:3306/collreach_posts_and_polls?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    url: jdbc:postgresql://p_sql:5432/collreach_posts_and_polls?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: collreach
+    password: Sensitive@1
+  security:
+    user:
+      name: ayush
+      password: pass
+      roles: manager
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+
+eureka:
+  client: 
+    serviceUrl: 
+      defaultZone: http://eserver:8761/eureka/
+
+posts:
+  url: http://posts:8084
+
+userprofile:
+  url: http://userprofile:8082
+
+frontend:
+  url: http://frontend:8081
+
+gateway:
+  url: http://gateway:80
