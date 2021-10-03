@@ -1,2 +1,5 @@
 server:
   port: 8084
+
+application:
+  name: test
