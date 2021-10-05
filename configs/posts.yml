@@ -22,9 +22,10 @@ spring:
     # url: jdbc:mysql://mysqldb:3306/collreach_posts_and_polls?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     # url: jdbc:postgresql://p_sql:5432/collreach_posts_and_polls?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     url: jdbc:mysql://collreach-rds.cr:3306/collreach_posts_and_polls?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
-    username: collreach
-    password: collreach
-    # password: Sensitive@1
+    # username: collreach
+    # password: collreach
+    username: root
+    password: Sensitive@1
   security:
     user:
       name: ayush
