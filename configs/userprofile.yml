@@ -70,14 +70,22 @@ spring:
 #     serviceUrl:
 #       defaultZone=${EUREKA_SERVER:http://eserver:8761/eureka}
 
+# posts:
+#   url: http://posts/posts/user/add-user
+
+# chat:
+#   url: http://chat-app/chat/user/add-user
+
+
+# AWS Route 53 hosted-zones based URI's
 posts:
-  url: http://posts/posts/user/add-user
+  url: http://posts.collreach/posts/user/add-user
 
 chat:
-  url: http://chat-app/chat/user/add-user
+  url: http://chat-app.collreach/chat/user/add-user
 
 frontend:
-  url: http://frontend:8081
+  url: http://frontend.collreach/
 
 gateway:
-  url: http://gateway
+  url: http://gateway.cr/
