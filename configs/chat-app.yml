@@ -17,7 +17,8 @@ spring:
   data:
     mongodb:
       # uri to be changed later for AWS
-      uri: mongodb://collreach:collReach@mongo_db:27017/collreach_chat?authSource=admin
+      # uri: mongodb://collreach:collReach@mongo_db:27017/collreach_chat?authSource=admin
+      uri: ${URI}
       # uri: mongodb://root:root@localhost:27017/test
       # database: collreach_chat
       # port: 27017
