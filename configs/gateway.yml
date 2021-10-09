@@ -12,21 +12,21 @@ spring:
           predicates:
             - Path=/baeldung/
         - id: userprofile-route
-          uri: lb://userprofile
+          uri: http://userprofile.collreach:8082
           predicates:
             - Path=/userprofile/**
         - id: chat-app-route
-          uri: lb://chat-app
+          uri: http://chat-app.collreach:8083
           predicates:
             - Path=/chat/**
         - id: posts-route
-          uri: lb://posts
+          uri: http://posts.collreach:8084
           predicates:
             - Path=/posts/**
-        - id: eureka-route
-          uri: lb://eserver
-          predicates:
-            - Path=/eserver/**
+#         - id: eureka-route
+#           uri: lb://eserver
+#           predicates:
+#             - Path=/eserver/**
         - id: frontend-route
           uri: http://frontend.collreach:8081
           predicates:
