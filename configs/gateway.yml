@@ -16,7 +16,7 @@ spring:
           predicates:
             - Path=/userprofile/**
         - id: chat-app-route
-          uri: http://chat-app.collreach:8083
+          uri: http://chat-app.cr:8083
           predicates:
             - Path=/chat/**
         - id: posts-route
