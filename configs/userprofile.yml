@@ -82,7 +82,7 @@ posts:
   url: http://posts.collreach:8084/posts/user/add-user
 
 chat:
-  url: http://chat-app.cr:8083/chat/user/add-user
+  url: http://chat-app.cr:8083/chat/add-user
 
 frontend:
   url: http://frontend.collreach:8081/
