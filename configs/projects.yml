@@ -15,8 +15,8 @@ spring:
        format_sql: true
  datasource:
    url: jdbc:mysql://collreach-rds.cr:3306/collreach_userlogin?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
-   username: root
-   password: Sensitive@1
+   username: collreach
+   password: collreach
  servlet:
    multipart:
      max-file-size: 10MB
