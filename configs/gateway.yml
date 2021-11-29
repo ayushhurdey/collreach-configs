@@ -29,7 +29,7 @@ spring:
 #             - Path=/eserver/**
         - id: projects-route
           uri: http://projects.collreach:8086
-          predicate:
+          predicates:
             - Path=/projects.cr/**
         - id: frontend-route
           uri: http://frontend.collreach:8081
